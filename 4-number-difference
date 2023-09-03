@@ -1,0 +1,12 @@
+public Integer diff(Integer a, Integer b) {
+    //code here
+    Integer result;
+    if(a!=null && b!=null){
+        if(a>b){
+            result = Math.abs(a-b);
+        }else{
+            result = Math.abs(b-a);
+        }
+    }
+    return result;
+}
