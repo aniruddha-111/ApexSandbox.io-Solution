@@ -1,0 +1,23 @@
+public String aOrAn(String word) {
+    //code here
+    string result;
+    //string letter=word.chatAt(0);
+    List<string> vowel= new List<string>();
+    vowel.add('a');
+    vowel.add('e');
+    vowel.add('i');
+    vowel.add('o');
+    vowel.add('u');
+    if(word.toLowerCase().startsWith('a')|| word.toLowerCase().startsWith('e')|| word.toLowerCase().startsWith('i')|| word.toLowerCase().startsWith('o')|| word.toLowerCase().startsWith('u')){
+		result='an '+word;
+	}else{
+		 result='a '+word;
+	}
+    /*if(vowel.contains(letter.toLowerCase())){
+        result='an '+word;
+    }else{
+        result='a '+word;
+    }*/
+    system.debug('--'+result);
+    return result;
+}
